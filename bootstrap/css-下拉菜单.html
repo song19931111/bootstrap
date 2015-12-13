@@ -1,0 +1,59 @@
+<html>
+	<head>
+	<!--此时表示根据设备的大小调整页面-->
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-width.intial-scale-1">
+	<!--调用jQuery-->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	</head>
+	<script type="text/javascript">
+	$(function() {
+		$("#mybut").on("mouseover",function(){
+			$(".dropdown-toggle").dropdown("toggle");
+		});
+		
+	});
+
+
+	</script>
+	<body>
+	<!-- 在此处进行所有代码的编写 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="dropdown">
+					<button id="mybut" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">编辑<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-pencil"></span>读取</a>
+						</li>
+					</ul>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-pencil"></span>读取</a>
+						</li>
+					</ul>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;读取</a>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;写入</a>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;修改</a>
+						</li>
+						<li class="divider"></li><!--分割线-->
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;设置</a>
+							</li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+	<head>
+	<!--此时表示根据设备的大小调整页面-->
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-width.intial-scale-1">
+	<!--调用jQuery-->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	</head>
+	<body>
+	<!-- 在此处进行所有代码的编写 -->
+	<form class="form-horizontal">
+		<fieldset>
+			<legend>用户注册</legend>
+		<div class="form-group">
+			<label for="username" class="col-md-2 control-label">用户名:</label>
+			<div class="col-md-5 ">
+			<input type="text" id="username" ,name="username" class="form-control"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="id_password" class="col-md-2 control-label">密&nbsp;&nbsp;&nbsp;&nbsp;码:</label>
+			<div class="col-md-5">
+			<input type="text" id="id_password" ,name="password" class="form-control"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label  class="col-md-2  control-label">性&nbsp;&nbsp;&nbsp;&nbsp;别:</label>
+			<div class="col-md-5">
+				<div class="radio-inline" >
+					<label  id="label_man"><input type="radio" value="男" id="man" name="sex" checked>男</label>
+				</div>
+				<div class="radio-inline">
+					<label><input type="radio" id="woman" name="sex" value="女" >女</label>
+				</div>
+			</div>
+		</div>
+<div class="form-group">
+			<label  class="col-md-2  control-label">技&nbsp;&nbsp;&nbsp;&nbsp;能:</label>
+			<div class="col-md-5">
+				<div class="checkbox-inline" >
+					<label  id="pro"><input type="checkbox"  id="pro" value="pro" name="pro" checked>编程开发</label>
+				</div>
+				<div class="checkbox-inline" >
+					<label  id="pro"><input type="checkbox"  id="pro" value="pro" name="pro" checked>数据库开发</label>
+				</div>
+				<div class="checkbox-inline" >
+					<label  id="pro"><input type="checkbox"  id="pro" value="pro" name="pro" checked>前端开发</label>
+				</div>
+
+			</div>
+		</div>
+
+		</fieldset>
+	</form>
+</body>
+</html>
